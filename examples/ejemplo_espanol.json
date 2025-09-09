@@ -1,0 +1,7 @@
+{
+    "prompt": "Una mujer está hablando apasionadamente al micrófono en un estudio de grabación. Lleva audífonos negros grandes y un cárdigan oscuro sobre una blusa gris. Su cabello largo y ondulado enmarca su rostro mientras mira ligeramente hacia arriba, con la boca abierta mientras habla. El estudio está equipado con varios equipos de audio, incluyendo una consola de mezclas y un teclado, con paneles de insonorización en las paredes. La iluminación es cálida y enfocada en ella, creando una atmósfera profesional e íntima. Un plano cercano captura su expresiva actuación.",
+    "cond_video": "examples/single/ref_image.png",
+    "cond_audio": {
+        "person1": "examples/single/1.wav"
+    }
+}

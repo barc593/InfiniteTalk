@@ -310,6 +310,10 @@ def get_embedding(speech_array, wav2vec_feature_extractor, audio_encoder, sr=160
     audio_feature = audio_feature.unsqueeze(0)
 
     # audio encoder
+    # Fix for RTX 5090 compatibility - set attention implementation to eager
+    if hasattr(audio_encoder, 'config'):
+        audio_encoder.config._attn_implementation = "eager"
+    
     with torch.no_grad():
         embeddings = audio_encoder(audio_feature, seq_len=int(video_length), output_hidden_states=True)
 
